@@ -20,4 +20,5 @@ resource "aws_instance" "devserver00" {
   tags = {
     Name = "devserver00"
   }
+  subnet_id = "${aws_subnet.subnet1.id}"
 }
