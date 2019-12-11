@@ -14,11 +14,11 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "devserver00" {
-  ami           = "${data.aws_ami.ubuntu.id}"
+  ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
 
   tags = {
     Name = "devserver00"
   }
-  subnet_id = "${aws_subnet.subnet1.id}"
+  subnet_id = "aws_subnet.subnet1.id"
 }
