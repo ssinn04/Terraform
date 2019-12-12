@@ -13,3 +13,11 @@
 - variable name cleanup in resources.tf
 - cleanup of object syntax
 - terraform fmt
+
+## [0.0.5] - ssinn
+- Removed region alias from main.tf
+- Cleaned up CIDR block notation in resources.tf
+- Created variables.tf
+- Modified servers.tf to use http_port variable instead of static entry.
+- Added web listener to servers.tf
+- terraform fmt

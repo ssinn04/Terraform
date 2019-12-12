@@ -2,12 +2,7 @@
 // terraform init
 // to rebuild these providers
 
-variable "region" {
-  default = "us-east-1"
-}
-
 provider "aws" {
-  alias  = "east"
   region = "us-east-1"
 }
 
