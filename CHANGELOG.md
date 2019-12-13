@@ -21,3 +21,8 @@
 - Modified servers.tf to use http_port variable instead of static entry.
 - Added web listener to servers.tf
 - terraform fmt
+
+## [0.0.6] - ssinn
+- resources.tf - Added egress rule for completeness.
+               - Added revoke_rules_on_delete directive
+- terraform fmt
